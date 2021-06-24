@@ -2,7 +2,6 @@
 
 b2exe=${1:-$HOME/src/BLAKE2/b2sum/b2sum}
 pyexe=python3
-
 vfypyscript=blake2hashes_verify.py
 
 # blake2s blake2sp blake2b blake2bp
@@ -13,7 +12,7 @@ for a in $algos; do
     l=$((8*i))
     o=$(exec $b2exe -a $a -l $l /dev/null 2>/dev/null)
     [ $? -eq 0 ] || break
-    printf '%-12s ("") = %s\n' "$a-$l"  "${o%% *}"
+    printf '%-12s ("") = %s\n' "$a-$l" "${o%% *}"
   done
 done  | \
   { [ -f $vfypyscript ] && exec $pyexe $vfypyscript || cat ; }
