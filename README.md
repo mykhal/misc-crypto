@@ -1,4 +1,3 @@
-# misc-crypto
+### Misc. crypto stuff
 
-<!-- FIXME .. -->
-
+* [BLAKE2 null hashes](blake2hashes.md)
