@@ -1,3 +1,3 @@
 ### Misc. crypto stuff
 
-* [BLAKE2 null hashes](blake2hashes.md)
+* [BLAKE2 null hashes](blake2hashes/)
