@@ -20,7 +20,7 @@ for line in sys.stdin:
 
     blake = getattr(hashlib, alg, None)
     if not blake:
-        print("skip", line)
+        print("[skip]", line)
         continue
 
     h = blake(
@@ -30,10 +30,10 @@ for line in sys.stdin:
 
     if h != hsh:
         fails += 1
-        print("FAIL", line)
+        print("[FAIL]", line)
         continue
 
-    print(" OK ", line)
+    print("[ OK ]", line)
 
 
 if fails:
