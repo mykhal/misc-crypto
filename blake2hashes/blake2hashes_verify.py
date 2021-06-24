@@ -4,7 +4,7 @@ import hashlib
 import re
 import sys
 
-rex = re.compile(r'(blake2[a-z]+)-(\d+)\s*\("([^"]*)"\)\s*=\s*([0-9a-f]+)')
+rex = re.compile(r'(blake2[a-z]+)-(\d+)\s*\("(.*?)"\)\s*=\s*([0-9a-f]+)')
 
 fails = 0
 
