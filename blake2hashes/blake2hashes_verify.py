@@ -43,6 +43,7 @@ for line in sys.stdin:
     if h != d["hash"]:
         fails += 1
         print("FAIL", line)
+        continue
 
     print(" OK ", line)
 
