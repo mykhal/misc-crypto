@@ -1,0 +1,28 @@
+dsa (ssh-dss):
+  AAAAB3NzaC1kc3MAAACBA
+  AAAAB3NzaC1kc3MAAACB
+  ...|.ss|h-d|ss.|...|
+  ....ssh-dss....
+  \x00\x00\x00\x07ssh-dss\x00\x00\x00\x81
+
+rsa (ssh-rsa):
+  AAAAB3NzaC1yc2EAAAADAQABAAABgQ
+  AAAAB3NzaC1yc2EAAAADAQABAAAB
+  ...|.ss|h-r|sa.|...|...|...|
+  ....ssh-rsa..........
+  \x00\x00\x00\x07ssh-rsa\x00\x00\x00\x03\x01\x00\x01\x00\x00\x01
+
+ecdsa (ecdsa-sha2-nistp256):
+  AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBB
+  AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABB
+  ...|.ec|dsa|-sh|a2-|nis|tp2|56.|...|nis|tp2|56.|..A|
+  ....ecdsa-sha2-nistp256....nistp256...A
+  \x00\x00\x00\x13ecdsa-sha2-nistp256\x00\x00\x00\x08nistp256\x00\x00\x00A
+
+ed25519 (ssh-ed25519):
+  AAAAC3NzaC1lZDI1NTE5AAAAI
+  AAAAC3NzaC1lZDI1NTE5AAAA
+  ...|.ss|h-e|d25|519|...|
+  ....ssh-ed25519...
+  \x00\x00\x00\x0Bssh-ed25519\x00\x00\x00
+
