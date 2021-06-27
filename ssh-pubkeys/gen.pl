@@ -16,7 +16,7 @@ sub common_initial_substr {
       $k = substr $s, 0, $len0-$dlen;
       $d{ $k } = "(whatever)";  # uniq. / Py set() emulation with hash keys
     }
-    return $k if (scalar keys %d) == 1;
+    return $k if (scalar keys %d) <= 1;
   }
 }
 
