@@ -21,7 +21,7 @@ sub common_initial_substr {
 }
 
 foreach $t (@types) {
-  for (1..2) {   # more samples for given ssh key type, ..1 for single full key
+  for (1..10) {   # more samples for given ssh key type, ..1 for single full key
     $fn = "/tmp/.ssh-key-just-for-testing.".time.++$i;
     `ssh-keygen -t $t -N "" -f $fn` or die "ssh-keygen not available?\n";
     open F, "<", "$fn.pub";
