@@ -6,7 +6,7 @@ const bech32map_a = Array.from("qpzry9x8gf2tvdw0s3jn54khce6mua7l"); // from spec
 
 // generate functional "vanity" "low-entropy" example age pubkeys
 // use with caution! may be nonsense points, may break in future
-// none will be ever able to derive privkey (hopefully)
+// noone will be ever able to derive privkey (hopefully)
 function age1pkexample(str, pad, altend) {
   str = str || "x";
   pad = pad || "x";
