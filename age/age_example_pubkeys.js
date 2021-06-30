@@ -21,7 +21,8 @@ function age1pkexample(str, pad, altend) {
   return r;
 }
 
-exports.age1pkexample = age1pkexample;
+if (typeof(exports) === "object")
+  exports.age1pkexample = age1pkexample;
 
 // examples
 console.assert( age1pkexample() ==
